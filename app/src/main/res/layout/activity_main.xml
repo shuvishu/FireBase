@@ -78,4 +78,13 @@
         android:layout_above="@+id/Login"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:id="@+id/ADDBUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETpass"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Login"
+        android:text="ADD" />
+
 </RelativeLayout>

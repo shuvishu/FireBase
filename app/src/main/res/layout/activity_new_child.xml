@@ -81,6 +81,7 @@
 
 
         <RadioGroup
+            android:id="@+id/RChildGender"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -101,6 +102,7 @@
             </LinearLayout>
 
         </RadioGroup>
+
         <EditText
             android:id="@+id/ETBirthRegistrationNumber"
             android:layout_width="match_parent"
@@ -144,6 +146,7 @@
             android:text="Select Type Of Delivery" />
 
         <RadioGroup
+            android:id="@+id/SelectTypeOfDelivery"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout

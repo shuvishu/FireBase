@@ -19,6 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import static java.lang.System.in;
+
 public class MainActivity extends AppCompatActivity {
     EditText et_id;
     EditText et_pass;
@@ -26,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference root=firebaseDatabase.getReference();//provides acccess to root node
     //DatabaseReference child=root.child("ADMIN");
     Button login;
+    Button ADD;
 
-    ArrayList arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,25 +37,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         login=(Button)findViewById(R.id.Login);
 
-        et_id= (EditText) findViewById(R.id.ETid);
-        et_pass= (EditText) findViewById(R.id.ETpass);
-               /* Badmin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    root.child("ADMIN").child(et_id.getText().toString()).setValue(et_pass.getText().toString());
-                }
-                });*/
+        ADD = (Button)findViewById(R.id.ADDBUTTON);
+        et_id= (EditText)findViewById(R.id.ETid);
+        et_pass= (EditText)findViewById(R.id.ETpass);
+
                login.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View v) {
                        Character login_in_char;
-                       String t=et_id.getText().toString();
-                       login_in_char=et_id.getText().toString().charAt(0);
+                       String t=et_id.getText().toString().toUpperCase();
+                       login_in_char=t.charAt(0);
 
                        switch (login_in_char)
                        {
-                           case 'a':
-                                root.child("ADMIN").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'A':
+                                root.child("LOGIN/ADMIN").child(t).addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(DataSnapshot dataSnapshot) {
                                         String password=et_pass.getText().toString();
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                         }
                                         else
                                         {
-                                            Toast.makeText(MainActivity.this,"INVALID PASSWORD",Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(MainActivity.this,"INVALID ID/PASSWORD",Toast.LENGTH_SHORT).show();
                                         }
                                     }
 
@@ -78,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                                break;
-                           case 'd':
-                               root.child("DISPENSARY").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'D':
+                               root.child("LOGIN/DISPENSARY").child(t).addValueEventListener(new ValueEventListener() {
                                    @Override
                                    public void onDataChange(DataSnapshot dataSnapshot) {
                                        String password=et_pass.getText().toString();
@@ -104,8 +102,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                                break;
-                           case 'h':
-                               root.child("HOSPITAL").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'H':
+                               root.child("LOGIN/HOSPITAL").child(t).addValueEventListener(new ValueEventListener() {
                                    @Override
                                    public void onDataChange(DataSnapshot dataSnapshot) {
                                        String password=et_pass.getText().toString();
@@ -130,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                                break;
-                           case 'm':
-                               root.child("MOTHER").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'M':
+                               root.child("LOGIN/MOTHER").child(t).addValueEventListener(new ValueEventListener() {
                                    @Override
                                    public void onDataChange(DataSnapshot dataSnapshot) {
                                        String password=et_pass.getText().toString();
@@ -155,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
                                });
 
                                break;
-                           case 's':
-                               root.child("SUPERVISOR").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'S':
+                               root.child("LOGIN/SUPERVISOR").child(t).addValueEventListener(new ValueEventListener() {
                                    @Override
                                    public void onDataChange(DataSnapshot dataSnapshot) {
                                        String password=et_pass.getText().toString();
@@ -180,8 +178,8 @@ public class MainActivity extends AppCompatActivity {
                                });
 
                                break;
-                           case 'w':
-                               root.child("WORKER").child(t).addValueEventListener(new ValueEventListener() {
+                           case 'W':
+                               root.child("LOGIN/WORKER").child(t).addValueEventListener(new ValueEventListener() {
                                    @Override
                                    public void onDataChange(DataSnapshot dataSnapshot) {
                                        String password=et_pass.getText().toString();
@@ -205,30 +203,12 @@ public class MainActivity extends AppCompatActivity {
                                });
 
                                break;
-
                        }
                    }
                });
 
     }
 
-    /*@Override
-    protected void onStart() {
-        super.onStart();
-        child.addValueEventListener(new ValueEventListener() {
-            @Override//any change in DB this will be invoked
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String message=dataSnapshot.getValue(String.class);
 
-                et_id.setText(message);
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }*/
 
 }
