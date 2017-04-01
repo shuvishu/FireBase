@@ -7,26 +7,6 @@
     tools:context="com.example.sairam.firebase.supervisorMain">
 
     <Button
-        android:id="@+id/add_mother"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
-        android:text="add mother"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/add_child"
-        android:layout_marginEnd="59dp" />
-
-    <Button
-        android:id="@+id/add_child"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="67dp"
-        android:text="add child"
-        android:layout_alignBaseline="@+id/add_mother"
-        android:layout_alignBottom="@+id/add_mother"
-        android:layout_alignParentEnd="true" />
-
-    <Button
         android:id="@+id/addAnganwadiWorker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
