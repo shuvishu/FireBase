@@ -50,15 +50,6 @@
         android:hint="Enter DispensaryID"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ETDispensaryID"
-        android:layout_marginTop="34dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>
