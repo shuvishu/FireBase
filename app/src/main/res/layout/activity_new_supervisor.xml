@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sairam.firebase.newSupervisor">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/ETnewSupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Supervisor ID"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ETSupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETnewSupId"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter supuervisor name"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ETNewSupNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETSupName"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter supervisor number"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/NewSupAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETNewSupNumber"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter the address" />
+
+    <Button
+        android:id="@+id/BAddSupervisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:text="Add"
+        android:layout_below="@+id/NewSupAddress"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/BcancelAddSupervisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BAddSupervisor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="66dp"
+        android:text="cancel" />
+</RelativeLayout>

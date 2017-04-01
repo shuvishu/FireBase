@@ -28,7 +28,8 @@
         <activity android:name=".NewChild" />
         <activity android:name=".NewWorker" />
         <activity android:name=".newSupervisor" />
-        <activity android:name=".MinistryAct"></activity>
+        <activity android:name=".MinistryAct" />
+        <activity android:name=".NewAnganwadi"></activity>
     </application>
 
 </manifest>
