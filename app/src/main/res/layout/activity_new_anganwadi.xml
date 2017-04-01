@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sairam.firebase.NewAnganwadi">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <EditText
         android:id="@+id/ETAnganwadiID"
@@ -13,7 +18,7 @@
         android:layout_marginTop="34dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="enter anganwadi ID"
+        android:hint="Enter anganwadi ID"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
@@ -43,13 +48,33 @@
         android:id="@+id/ETDispensaryID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ETworkerID"
-        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Enter DispensaryID"
+        android:layout_below="@+id/ETworkerID"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:id="@+id/ETLocality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETAngandwadiDistrict"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Anganwadi locality" />
+
+    <EditText
+        android:id="@+id/ETSupervisorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETAnganwadiID"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter supervisor ID" />
 
 
-</RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
