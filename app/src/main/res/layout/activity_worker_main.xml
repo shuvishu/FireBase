@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mbck"
     tools:context="com.example.sairam.firebase.workerMain">
 
     <Button
         android:id="@+id/BAddMother"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Mother"/>
 
     <Button
         android:id="@+id/BAddChild"
         android:layout_below="@+id/BAddMother"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Child"/>
 

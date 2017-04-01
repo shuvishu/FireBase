@@ -8,25 +8,63 @@
     tools:context="com.example.sairam.firebase.MainActivity">
 
 
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:layout_marginBottom="222dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic5" />
+    </ViewFlipper>
+
+
     <EditText
         android:id="@+id/ETid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="ID"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/ETpass" />
+        android:layout_above="@+id/Login"
+        android:layout_alignStart="@+id/ETpass"
+        android:layout_marginBottom="61dp" />
 
     <Button
         android:id="@+id/Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:layout_below="@+id/ETpass"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:layout_marginBottom="29dp" />
 
 
 
@@ -37,7 +75,7 @@
         android:ems="10"
         android:inputType="textPersonName"
        android:hint="password"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/ETid"
+        android:layout_above="@+id/Login"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

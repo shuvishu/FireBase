@@ -7,7 +7,7 @@
         android:layout_toStartOf="@+id/editText">
     tools:context="com.example.sairam.firebase.NewMother">
 
-        <LinearLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
