@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sairam.firebase.NewWorker">
+
+    <EditText
+        android:id="@+id/workerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+       android:hint="enter the worker id"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/workerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/workerID"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+       android:hint="enter worker name"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/workerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="enter the number"
+        android:layout_below="@+id/workerName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/workeraddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/SaveWorkerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/workeraddress"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="59dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/cancelSavingWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SaveWorkerDetails"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp"
+        android:text="cancel" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sairam.firebase.MainActivity">
+
+
+    <EditText
+        android:id="@+id/ETid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ID"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ETpass" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@+id/ETpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+
+
+    <EditText
+        android:id="@+id/ETpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+       android:hint="password"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/ETid"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

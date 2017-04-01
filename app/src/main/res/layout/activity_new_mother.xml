@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/editText">
+    tools:context="com.example.sairam.firebase.NewMother">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/MotherId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/BcancelsaveMother"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="19dp"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="enter mother ID"/>
+
+            <EditText
+                android:id="@+id/anganwadiID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText"
+                android:layout_below="@+id/editText"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+               android:hint="enter anganwadi ID"/>
+
+            <DatePicker
+                android:id="@+id/DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText2"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="select a date" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText3"
+                android:layout_below="@+id/editText3"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="enter phone number"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText4"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="enter the address" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText5"
+                android:layout_below="@+id/editText5"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText6"
+                android:layout_below="@+id/editText6"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/BsaveMother"
+                android:layout_alignStart="@+id/editText7"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BsaveMother"
+                    android:text="SAVE"
+                    android:layout_marginStart="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BcancelsaveMother"
+                    android:text="CANCel"
+                    android:layout_marginLeft="246dp"
+                    android:layout_alignBaseline="@+id/BsaveMother"
+                    android:layout_alignBottom="@+id/BsaveMother"
+                    android:layout_toEndOf="@+id/BsaveMother"
+                    android:layout_marginStart="39dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+

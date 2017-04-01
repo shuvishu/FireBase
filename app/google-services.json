@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "418018713827",
+    "firebase_url": "https://fir-125d6.firebaseio.com",
+    "project_id": "fir-125d6",
+    "storage_bucket": "fir-125d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418018713827:android:1e53f155c741aa3b",
+        "android_client_info": {
+          "package_name": "com.example.sairam.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418018713827-95p1ktm387kj7e24c78isnrvd1sb8cqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARhwBRhPwEa2pg9h1ZIRgX7uj0xfd-qjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
