@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mbck"
     tools:context="com.example.sairam.firebase.NewAnganwadi">
 <LinearLayout
     android:layout_width="match_parent"
@@ -15,7 +16,8 @@
         android:id="@+id/ETAnganwadiID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+
+
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Enter anganwadi ID"
@@ -28,7 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/ETAnganwadiID"
-        android:layout_marginTop="52dp"
+
+
         android:ems="10"
         android:hint="Enter District"
         android:inputType="textPersonName" />
@@ -39,10 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ETAngandwadiDistrict"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Enter Worker ID" />
+        android:hint="Enter Worker ID"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ETDispensaryID"
@@ -74,6 +76,11 @@
         android:inputType="textPersonName"
         android:hint="Enter supervisor ID" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add"/>
 
 </LinearLayout>
 

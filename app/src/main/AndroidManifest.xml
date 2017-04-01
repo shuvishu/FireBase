@@ -29,7 +29,20 @@
         <activity android:name=".NewWorker" />
         <activity android:name=".newSupervisor" />
         <activity android:name=".MinistryAct" />
-        <activity android:name=".NewAnganwadi"></activity>
+        <activity android:name=".NewAnganwadi" />
+        <activity android:name=".Antenatal" />
+        <activity android:name=".PostPartum" />
+        <activity android:name=".BabyCare" />
+        <activity android:name=".ViewMotherImmunization" />
+        <activity android:name=".ViewChildImmunization">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoTutorials" />
+        <activity android:name=".WeightAnalysis"></activity>
     </application>
 
 </manifest>

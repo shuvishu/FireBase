@@ -4,14 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mbck"
     tools:context="com.example.sairam.firebase.dispensaryMain">
 
-    <TextView
-        android:id="@+id/DISPENSARY_MAIN"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/BAnteNatalCare"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+
+        android:background="@color/colorPrimaryDark"
+        android:text="AnteNatal Care"
+        android:textColor="#FFFFFF"
+
+
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="209dp"
-        android:text="DISPENSARY" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/BPostPartum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Post Partum Details"
+
+
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/BAnteNatalCare"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Immuniation Child"
+
+
+        android:layout_below="@+id/BPostPartum"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/BImmunizationMother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/colorPrimaryDark"
+        android:text="Immunization Mother"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
