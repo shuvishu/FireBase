@@ -199,6 +199,7 @@
                     android:layout_width="128dp"
                     android:layout_height="match_parent"
                     android:text="NO"/>
+
         </RadioGroup>
 
 
@@ -1086,6 +1087,12 @@
             </TableRow>
         </TableLayout>
 
+        <EditText
+            android:id="@+id/ETCPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
 
 
         <LinearLayout

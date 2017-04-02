@@ -15,11 +15,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class NewChild extends AppCompatActivity {
 
     Button Cancle,Save;
-    EditText ChildId,MotherId,AnganwadiId,Childname,BirthRegistrationNumber,ChildWeight,ChildHeight,EndTerm;
+    EditText ChildId,MotherId,AnganwadiId,Childname,BirthRegistrationNumber,ChildWeight,ChildHeight,EndTerm,ETCPassword;
     DatePicker ChildDOB;
     RadioGroup RChildGender,RTypeOfDelivery,RChildCried;
 
@@ -43,7 +45,7 @@ public class NewChild extends AppCompatActivity {
         day = ChildDOB.getDayOfMonth();
         month = ChildDOB.getMonth();
         year = ChildDOB.getYear();
-        String ChildDob = day + "/" + month + "/" + year;
+        final String ChildDob = day + "/" + month + "/" + year;
 
         ChildId = (EditText)findViewById(R.id.ETchildId);
         MotherId =(EditText)findViewById(R.id.ETChildMotherId);
@@ -53,6 +55,7 @@ public class NewChild extends AppCompatActivity {
         ChildWeight =(EditText)findViewById(R.id.ETChildWeight);
         ChildHeight =(EditText)findViewById(R.id.ETChildHeight);
         EndTerm = (EditText)findViewById(R.id.ETTerm);
+        ETCPassword =(EditText)findViewById(R.id.ETCPassword);
 
 
 
@@ -129,50 +132,66 @@ public class NewChild extends AppCompatActivity {
 
 
 
-        final HashMap hm=new HashMap();
-                hm.put("CID",ChildId.getText());
-                hm.put("MID",MotherId);
-                hm.put("AID",AnganwadiId);
-                hm.put("ChildName",ChildId);
-                hm.put("ChildDOB",ChildDob);
-                hm.put("ChildGender",RChildGender);
-                hm.put("ChildBirthRegistrationNumber",BirthRegistrationNumber);
-                hm.put("ChildWeight",ChildWeight);
-                hm.put("ChildHeight",ChildHeight);
-                hm.put("DeliveryType",DeliveryType);
-                hm.put( "EndTerm",EndTerm);
 
-                hm.put("UPD1",ETUPD1.getText());
-                hm.put("UPD3",ETUPD3.getText());
-                hm.put( "UPD7",ETUPD7.getText());
-                hm.put( "UPW6",ETUPW6.getText());
-
-                hm.put("SPD1",ETSPD1.getText());
-                hm.put("SPD3",ETSPD3.getText());
-                hm.put("SPD7",ETSPD7.getText());
-                hm.put("SPW1",ETSPW6.getText());
-
-                hm.put("DD1",ETDD1.getText());
-                hm.put("DD3",ETDD3.getText());
-                hm.put("DD7",ETDD7.getText());
-                hm.put("DW1",ETDW6.getText());
-
-                hm.put("VD1",ETVD1.getText());
-                hm.put("VD3",ETVD3.getText());
-                hm.put( "VD7",ETVD7.getText());
-                hm.put( "VW1",ETVW6.getText());
-
-
+//        String str ;
         Save = (Button)findViewById(R.id.BsaveChild);
         Save.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
 
-                                        Iterator i = hm.keySet().iterator();
+                                        final HashMap<String,Object> hm=new HashMap();
+                                        hm.put("CID",ChildId.getText().toString());
+                                        hm.put("MID",MotherId);
+                                        hm.put("AID",AnganwadiId);
+                                        hm.put("ChildName",ChildId);
+                                        hm.put("ChildDOB",ChildDob);
+                                        hm.put("ChildGender",RChildGender);
+                                        hm.put("ChildBirthRegistrationNumber",BirthRegistrationNumber);
+                                        hm.put("ChildWeight",ChildWeight);
+                                        hm.put("ChildHeight",ChildHeight);
+                                        hm.put("DeliveryType",DeliveryType);
+                                        hm.put( "EndTerm",EndTerm);
+
+                                        hm.put("UPD1",ETUPD1.getText());
+                                        hm.put("UPD3",ETUPD3.getText());
+                                        hm.put( "UPD7",ETUPD7.getText());
+                                        hm.put( "UPW6",ETUPW6.getText());
+
+                                        hm.put("SPD1",ETSPD1.getText());
+                                        hm.put("SPD3",ETSPD3.getText());
+                                        hm.put("SPD7",ETSPD7.getText());
+                                        hm.put("SPW1",ETSPW6.getText());
+
+                                        hm.put("DD1",ETDD1.getText());
+                                        hm.put("DD3",ETDD3.getText());
+                                        hm.put("DD7",ETDD7.getText());
+                                        hm.put("DW1",ETDW6.getText());
+
+                                        hm.put("VD1",ETVD1.getText());
+                                        hm.put("VD3",ETVD3.getText());
+                                        hm.put( "VD7",ETVD7.getText());
+                                        hm.put( "VW1",ETVW6.getText());
+
+                                        final Set set = hm.entrySet();
+                                        final  Iterator i = set.iterator();
+
+
+
+//                                        str =hm.get()
+
+//                                        Toast.makeText(NewChild.this,str,Toast.LENGTH_SHORT).show();
+
                                         while (i.hasNext())
                                         {
-                                            String str = i.toString();
-                                            Toast.makeText(NewChild.this,str,Toast.LENGTH_SHORT).show();
+                                            Map.Entry me = (Map.Entry)i.next();
+                                            String str = (String) me.getKey();
+                                          //  String str1 = (String) me.getValue();
+
+                                            System.out.print(str);
+                                         //   System.out.print(str1);
+
+                                            //Toast.makeText(NewChild.this,str,Toast.LENGTH_SHORT).show();
+                                            //Toast.makeText(NewChild.this,str1,Toast.LENGTH_SHORT).show();
                                         }
                                     }
             });
