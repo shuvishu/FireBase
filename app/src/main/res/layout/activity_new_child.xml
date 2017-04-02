@@ -83,11 +83,9 @@
         <RadioGroup
             android:id="@+id/RChildGender"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/RBFemaleChild"
                 android:layout_width="169dp"
@@ -96,12 +94,12 @@
 
             <RadioButton
                 android:id="@+id/RBMaleChild"
-                android:layout_width="match_parent"
+                android:layout_width="173dp"
                 android:layout_height="match_parent"
-                android:text="MALE"/>
-            </LinearLayout>
+                android:text="MALE" />
 
         </RadioGroup>
+
 
         <EditText
             android:id="@+id/ETBirthRegistrationNumber"
@@ -148,11 +146,9 @@
         <RadioGroup
             android:id="@+id/SelectTypeOfDelivery"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
                 <RadioButton
                     android:id="@+id/RBNormal"
                     android:layout_width="101dp"
@@ -169,7 +165,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="CS"/>
-            </LinearLayout>
         </RadioGroup>
 
         <EditText
@@ -190,11 +185,9 @@
         <RadioGroup
             android:id="@+id/RChildCried"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
                 <RadioButton
                     android:id="@+id/RBYes"
                     android:layout_width="101dp"
@@ -206,8 +199,6 @@
                     android:layout_width="128dp"
                     android:layout_height="match_parent"
                     android:text="NO"/>
-
-            </LinearLayout>
         </RadioGroup>
 
 

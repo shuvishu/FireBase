@@ -43,7 +43,8 @@
         </activity>
         <activity android:name=".VideoTutorials" />
         <activity android:name=".WeightAnalysis" />
-        <activity android:name=".ChildImmunizaton"></activity>
+        <activity android:name=".ChildImmunizaton" />
+        <activity android:name=".Weight"></activity>
     </application>
 
 </manifest>
