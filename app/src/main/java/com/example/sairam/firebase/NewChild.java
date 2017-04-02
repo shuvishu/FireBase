@@ -188,10 +188,7 @@ public class NewChild extends AppCompatActivity {
                                           //  String str1 = (String) me.getValue();
 
                                             System.out.print(str);
-                                         //   System.out.print(str1);
 
-                                            //Toast.makeText(NewChild.this,str,Toast.LENGTH_SHORT).show();
-                                            //Toast.makeText(NewChild.this,str1,Toast.LENGTH_SHORT).show();
                                         }
                                     }
             });
