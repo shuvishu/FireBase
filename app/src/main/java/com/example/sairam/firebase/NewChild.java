@@ -12,6 +12,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -31,6 +34,8 @@ public class NewChild extends AppCompatActivity {
     EditText ETVD1,ETVD3,ETVD7,ETVW6;
 
     String Gender,DeliveryType,ChildCried;
+    FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
+    DatabaseReference root;
 
 
     @Override
@@ -204,13 +209,15 @@ public class NewChild extends AppCompatActivity {
 
 
 
-//        ArrayList<Model> list=new ArrayList<>();
-//        Model m=new Model(
-//                ETUPD1.getText().toString(),ETUPD3.getText().toString(),ETUPD7.getText().toString(),ETUPW6.getText().toString(),
-//                ETSPD1.getText().toString(),ETSPD3.getText().toString(),ETSPD7.getText().toString(),ETSPW6.getText().toString(),
-//                ETDD1.getText().toString(),ETDD3.getText().toString(),ETDD7.getText().toString(),ETDW6.getText().toString(),
-//                ETVD1.getText().toString(),ETVD3.getText().toString(),ETVD7.getText().toString(),ETVW6.getText().toString()
-//        );
+        ArrayList<Model> list=new ArrayList<>();
+        Model m=new Model(
+                ETUPD1.getText().toString(),ETUPD3.getText().toString(),ETUPD7.getText().toString(),ETUPW6.getText().toString(),
+                ETSPD1.getText().toString(),ETSPD3.getText().toString(),ETSPD7.getText().toString(),ETSPW6.getText().toString(),
+                ETDD1.getText().toString(),ETDD3.getText().toString(),ETDD7.getText().toString(),ETDW6.getText().toString(),
+                ETVD1.getText().toString(),ETVD3.getText().toString(),ETVD7.getText().toString(),ETVW6.getText().toString()
+        );
+        root=firebaseDatabase.getReference("user/values");
+
 //
 //
 ////extras
