@@ -177,9 +177,7 @@ public class NewChild extends AppCompatActivity {
 
 
 
-//                                        str =hm.get()
 
-//                                        Toast.makeText(NewChild.this,str,Toast.LENGTH_SHORT).show();
 
                                         while (i.hasNext())
                                         {
