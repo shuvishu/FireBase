@@ -42,7 +42,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".VideoTutorials" />
-        <activity android:name=".WeightAnalysis"></activity>
+        <activity android:name=".WeightAnalysis" />
+        <activity android:name=".ChildImmunizaton"></activity>
     </application>
 
 </manifest>
