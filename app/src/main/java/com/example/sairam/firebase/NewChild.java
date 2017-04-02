@@ -101,7 +101,7 @@ public class NewChild extends AppCompatActivity {
                 ETDD1.getText().toString(),ETDD3.getText().toString(),ETDD7.getText().toString(),ETDW6.getText().toString(),
                 ETVD1.getText().toString(),ETVD3.getText().toString(),ETVD7.getText().toString(),ETVW6.getText().toString()
         );
-//extra
+//extras
         //m.setUPD1376(ETUPD1.getText().toString(),ETUPD1.getText().toString(),ETUPD3.getText().toString(),ETUPD7.getText().toString());
 
 //        m.setUPD1(ETUPD1.getText().toString());
