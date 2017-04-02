@@ -18,7 +18,7 @@ public class supervisorMain extends AppCompatActivity {
         Bad_worker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newWorkerIntent=new Intent(supervisorMain.this,NewWorker.class);
+                Intent newWorkerIntent=new Intent(getApplicationContext(),NewWorker.class);
                 startActivity(newWorkerIntent);
             }
         });

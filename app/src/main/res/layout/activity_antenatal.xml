@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_toStartOf="@+id/editText">
+    tools:context="com.example.sairam.firebase.NewMother">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+
+<TextView
+    android:id="@+id/LMAntenatalCare"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffffff"
+    android:text="ANTENATAL CARE" />
+
+<TextView
+android:id="@+id/LMObstetric"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Obstetric Complication In Previous Pregnancy :" />
+
+
+<CheckBox
+android:id="@+id/APH"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="APH" />
+
+<CheckBox
+android:id="@+id/BEclampsia"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="B. Eclampsia" />
+<CheckBox
+android:id="@+id/PIH"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="PIH" />
+<CheckBox
+android:id="@+id/Anemia"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Anemia" />
+<CheckBox
+android:id="@+id/ObstructedLabour"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="ObstructedLabour" />
+<CheckBox
+android:id="@+id/PPH"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="PPH" />
+<CheckBox
+android:id="@+id/LSCS"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="LSCS" />
+<CheckBox
+android:id="@+id/CongenitalAnomaly"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Congenital Anomaly In baby" />
+<CheckBox
+android:id="@+id/Others"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Others" />
+<EditText
+android:id="@+id/ETOthers"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Please Describe Here...." />
+
+
+<TextView
+android:id="@+id/LMPastHistory"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="PastHistory :" />
+
+<CheckBox
+android:id="@+id/PHTuberculosis"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Tuberculosis" />
+<CheckBox
+android:id="@+id/PHHypertension"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Hypertension" />
+<CheckBox
+android:id="@+id/PHHeartDiease"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Heart Diease" />
+<CheckBox
+android:id="@+id/PHDiabetes"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Diabetes" />
+<CheckBox
+android:id="@+id/PHAsthma"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Asthma" />
+<CheckBox
+android:id="@+id/PHOthers"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Others" />
+
+
+<TextView
+android:id="@+id/LMExamination"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Examination :" />
+
+
+<TableLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVEGeneralCondition"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="GeneralCondition" />
+
+    <EditText
+        android:id="@+id/ETEGC"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVEHeart"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Heart" />
+
+    <EditText
+        android:id="@+id/ETEH"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVELungs"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Lungs" />
+    <EditText
+        android:id="@+id/ETEL"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVEBreasts"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Breasts" />
+
+    <EditText
+        android:id="@+id/ETEB"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+</TableLayout>
+
+
+
+
+
+<TextView
+android:id="@+id/LMAntenatalVisits"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Antenatal Visits :" />
+
+
+<HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAVHealthStatus"
+            android:gravity="center"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Health Status" />
+
+
+        <TextView
+            android:id="@+id/TVAV1"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/TVAV2"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/TVAV3"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/TVAV4"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="4" />
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVPVDate"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Date" />
+
+
+        <EditText
+            android:id="@+id/ETAVDD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="DD/MM/YY" />
+
+        <EditText
+            android:id="@+id/ETAVDD2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="DD/MM/YY" />
+
+        <EditText
+            android:id="@+id/ETAVDD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="DD/MM/YY"/>
+
+        <EditText
+            android:id="@+id/ETAVDD4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="DD/MM/YY" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVAnyComplaints"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Any Complaints" />
+
+        <EditText
+            android:id="@+id/ETAVAC1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVAC2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVAC3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVAC4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVPOG"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="POG (Weeks)" />
+
+        <EditText
+            android:id="@+id/ETAVPOG1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPOG2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPOG3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPOG4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVWeight"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Weight (KG)" />
+
+        <EditText
+            android:id="@+id/ETAVW1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVW2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVW3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVW4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVPulseRate"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Pulse Rate" />
+
+        <EditText
+            android:id="@+id/ETAVPR1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPR2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPRD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVPR4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVBloodPressure"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Blood Pressure" />
+
+        <EditText
+            android:id="@+id/ETAVBP1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVBP2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVBP3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVBP4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVPallor"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Pallor" />
+
+        <EditText
+            android:id="@+id/ETAVP1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVP2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVP3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVP4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVOedema"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Oedema" />
+
+        <EditText
+            android:id="@+id/ETAVO1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVO2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVO3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVO4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/PVJaundice"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Jaundice" />
+
+        <EditText
+            android:id="@+id/ETAVJ1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVJ2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVJ3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAVJ4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+</TableLayout>
+</HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+<TextView
+android:id="@+id/LAbdominalExamination"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Abdominal Examination :" />
+
+
+
+
+<HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAEFundalHeightWeeks"
+            android:gravity="center"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Fundal Height Weeks/Cm" />
+
+
+        <EditText
+            android:id="@+id/ETAEFHW1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHW2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHW3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHW4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint=""/>
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAELie"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Lie/Presentation" />
+
+
+        <EditText
+            android:id="@+id/ETAEL1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEL2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEL3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint=""/>
+
+        <EditText
+            android:id="@+id/ETAEL4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAEFetalMovements"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Fetal Movements" />
+
+        <EditText
+            android:id="@+id/ETAEFM1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="Normal/reduced/Absent" />
+
+        <EditText
+            android:id="@+id/ETAEFM2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="Normal/reduced/Absent" />
+
+        <EditText
+            android:id="@+id/ETAEFM3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="Normal/reduced/Absent" />
+
+        <EditText
+            android:id="@+id/ETAEFM4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="Normal/reduced/Absent" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAEFetalHeartRatePerMinute"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Fetal Heart Rate Per Minute" />
+
+        <EditText
+            android:id="@+id/ETAEFHRPM1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHRPM2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHRPM3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEFHRPM4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVPVIfDone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="P/V if done" />
+
+        <EditText
+            android:id="@+id/ETAEPVIfDone1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEPVIfDone2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEPVIfDone3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETAEPVIfDone4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+    </TableRow>
+</TableLayout>
+</HorizontalScrollView>
+
+
+
+
+
+
+
+<TextView
+android:id="@+id/LEssentialInvestigations"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Essential Investigations :" />
+
+
+
+<HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVEIHemoglobin"
+            android:gravity="center"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Hemoglobin" />
+
+
+        <EditText
+            android:id="@+id/ETEIH1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIH2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIH3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIH4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint=""/>
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVEIUrineAlbumin"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Urine Albumin" />
+
+
+        <EditText
+            android:id="@+id/ETEIUA1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIUA2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIUA3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint=""/>
+
+        <EditText
+            android:id="@+id/ETEIUA4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVEIUrineSugar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Urine Sugar" />
+
+        <EditText
+            android:id="@+id/ETEIUS1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIUS2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIUS3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/ETEIUS4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="" />
+
+    </TableRow>
+</TableLayout>
+</HorizontalScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD"/>
+</LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+

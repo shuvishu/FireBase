@@ -4,15 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mbck"
     tools:context="com.example.sairam.firebase.adminMain">
 
-    <TextView
-        android:id="@+id/ADMIN_MAIN"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/BAddAnganwadi"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add Anganwadi" />
+
+    <Button
+        android:id="@+id/BGenerateReports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Generate reports"
+        android:layout_below="@+id/BAddAnganwadi"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="151dp"
-        android:layout_marginTop="193dp"
-        android:text="ADMIN" />
+        android:layout_marginTop="36dp" />
 </RelativeLayout>

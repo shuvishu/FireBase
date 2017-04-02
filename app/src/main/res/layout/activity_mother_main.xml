@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sairam.firebase.motherMain">
+    android:background="@drawable/mbck">
 
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/BViewMotherImmunization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="View Mother Immunization details"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/BViewChildImmunization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="View Child Immunization details"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/BViewMotherImmunization"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/BVideoTutorials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Video Tutorials(Voice based)"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/BViewChildImmunization"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

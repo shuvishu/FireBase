@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sairam.firebase.NewChild">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<TextView
+    android:id="@+id/LPostnatalCare"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffffff"
+    android:text="Post Natal Care" />
+
+<TextView
+android:id="@+id/LDeliverType"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Select Type Of Delivery" />
+
+<RadioGroup
+android:id="@+id/SelectTypeOfDelivery"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/RBNormal"
+        android:layout_width="101dp"
+        android:layout_height="match_parent"
+        android:text="Normal" />
+
+    <RadioButton
+        android:id="@+id/RBInstr"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:text="Instr"/>
+    <RadioButton
+        android:id="@+id/RBCS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CS"/>
+</LinearLayout>
+</RadioGroup>
+
+<EditText
+android:id="@+id/ETTerm"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:hint="Enter Term" />
+
+
+<TextView
+android:id="@+id/LChildCried"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textColor="@color/colorPrimary"
+android:text="Cried Immediately After Birth" />
+
+<RadioGroup
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/RBYes"
+        android:layout_width="101dp"
+        android:layout_height="match_parent"
+        android:text="YES" />
+
+    <RadioButton
+        android:id="@+id/RBNo"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:text="NO"/>
+
+</LinearLayout>
+</RadioGroup>
+
+
+
+<TextView
+android:id="@+id/LBabyCare"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="25dp"
+android:background="@color/colorPrimary"
+android:textColor="#ffffff"
+android:text="Care Of baby" />
+
+<HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVCHealthCare"
+            android:gravity="center"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Health Status" />
+
+
+        <TextView
+            android:id="@+id/TVDay1"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Day 1" />
+
+        <TextView
+            android:id="@+id/TVDay3"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Day 3" />
+
+        <TextView
+            android:id="@+id/TVDay7"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Day 7" />
+
+        <TextView
+            android:id="@+id/TVWeek6"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Week 6th" />
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVUrinePassed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Urine Passed" />
+
+        <EditText
+            android:id="@+id/ETUPD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETUPD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETUPD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETUPW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVStoolPassed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Stool Passed" />
+
+        <EditText
+            android:id="@+id/ETSPD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSPD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSPD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSPW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVDiarrhoea"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Diarrhoea" />
+
+        <EditText
+            android:id="@+id/ETDD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETDD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETDD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETDW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVVomiting"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vomiting" />
+
+        <EditText
+            android:id="@+id/ETVD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETVD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETVD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETVW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVConvulsions"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Convulsions" />
+
+        <EditText
+            android:id="@+id/ETCD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVActivity"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Activity (Good/Lethargic)" />
+
+        <EditText
+            android:id="@+id/ETAD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVSucking"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Sucking (Good/Poor)" />
+
+        <EditText
+            android:id="@+id/ETSD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVBreathing"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Breathing (Fast/Difficult)" />
+
+        <EditText
+            android:id="@+id/ETBD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETBD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETBD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETBW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVChestIndrawing"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Chest Indrawing (Presnet/Abesnt)" />
+
+        <EditText
+            android:id="@+id/ETCID1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCID3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCID7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCIW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVTemperature"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Temperature" />
+
+        <EditText
+            android:id="@+id/ETTD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETTD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETTD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETTW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVJaundice"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Jaundice" />
+
+        <EditText
+            android:id="@+id/ETJD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETJD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETJD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETJW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVConditionOfUmbilicalStump"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Condition Of Umbilical Stump" />
+
+        <EditText
+            android:id="@+id/ETCOUSD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCOUSD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCOUSD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETCOUSW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVSkinPustules"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Skin Pustules (Present/Absent)" />
+
+        <EditText
+            android:id="@+id/ETSKPD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSKPD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSKPD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETSKPW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVAnyOtherComplications"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Any Other Complications" />
+
+        <EditText
+            android:id="@+id/ETAOCD1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAOCD3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAOCD7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ETAOCW6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </TableRow>
+</TableLayout>
+</HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+

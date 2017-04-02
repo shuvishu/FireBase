@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sairam.firebase.NewChild">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+6
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVVaccine"
+            android:gravity="center"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vaccine" />
+
+
+        <TextView
+            android:id="@+id/TVMonth"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Month" />
+
+        <TextView
+            android:id="@+id/TVStatus"
+            android:background="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="status"/>
+
+
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVBCG"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="BCG" />
+        <TextView
+            android:id="@+id/TVBirth1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Birth" />
+
+        <EditText
+            android:id="@+id/ETStatus1"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVOpv0"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="BCG" />
+
+        <TextView
+            android:id="@+id/TVBirth2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Birth" />
+
+        <EditText
+            android:id="@+id/ETStatus2"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVHB0"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="hepatitis B-0" />
+
+        <TextView
+            android:id="@+id/TVBirth3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Birth" />
+
+        <EditText
+            android:id="@+id/ETStatus3"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVOpv1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="OPV-1" />
+
+        <TextView
+            android:id="@+id/month1.5_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="1.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus4"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVDpt1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="DPT-1" />
+
+        <TextView
+            android:id="@+id/month1.5_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="1.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus5"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVHB1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="hepatitis B-1" />
+
+        <TextView
+            android:id="@+id/month1.5_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="1.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus6"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/OPV2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="OPV-2" />
+
+        <TextView
+            android:id="@+id/month2.5_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="2.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus7"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/DPT2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="DPT-2" />
+
+        <TextView
+            android:id="@+id/month2.5_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="2.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus8"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVHB2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="hepatitis B-2" />
+
+        <TextView
+            android:id="@+id/month2.5_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="2.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus9"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/OPV3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="OPV-3" />
+
+        <TextView
+            android:id="@+id/month3.5_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="3.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus10"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/DPT3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="DPT-3" />
+
+        <TextView
+            android:id="@+id/month3.5_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="3.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus11"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TVHB3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="hepatitis B-3" />
+
+        <TextView
+            android:id="@+id/month3.5_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="3.5 Months" />
+        <EditText
+            android:id="@+id/ETStatus12"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/MEASLES"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Measles" />
+
+        <TextView
+            android:id="@+id/month9_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="9 Months" />
+        <EditText
+            android:id="@+id/ETStatus13"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/VITA_A_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vitamin A" />
+
+        <TextView
+            android:id="@+id/month9_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="9 Months" />
+        <EditText
+            android:id="@+id/ETStatus14"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/DPTBOST"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="DPT-Booster" />
+
+        <TextView
+            android:id="@+id/month16_24_1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="16-24 Months" />
+        <EditText
+            android:id="@+id/ETStatus15"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/POLIOBOST"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Polio-Booster" />
+
+        <TextView
+            android:id="@+id/month16_24_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="16-24 Months" />
+        <EditText
+            android:id="@+id/ETStatus16"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/VITA_2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vitamin A" />
+
+        <TextView
+            android:id="@+id/month16_24_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="16-24 Months" />
+        <EditText
+            android:id="@+id/ETStatus17"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/VITA_A_3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vitamin A" />
+
+        <TextView
+            android:id="@+id/month24"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="24 Months" />
+        <EditText
+            android:id="@+id/ETStatus18"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/VITA_A_4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vitamin A" />
+
+        <TextView
+            android:id="@+id/month30"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="30 Months" />
+        <EditText
+            android:id="@+id/ETStatus19"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/VITA_A_5"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="Vitamin A" />
+
+        <TextView
+            android:id="@+id/month36"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="36 Months" />
+        <EditText
+            android:id="@+id/ETStatus20"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+
+    </TableRow>
+
+</TableLayout>
+</HorizontalScrollView>
+    </LinearLayout>
+
+           </ScrollView>

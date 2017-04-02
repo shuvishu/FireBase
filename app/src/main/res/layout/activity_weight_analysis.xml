@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sairam.firebase.NewChild">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+    android:id="@+id/LWeightAnalysis"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffffff"
+    android:text="Weight Analysis" />
+
+<TableLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAAge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="Age (in Months)" />
+
+    <TextView
+        android:id="@+id/ETWAWeight"
+        android:layout_width="162dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:layout_height="match_parent"
+        android:text="Weight" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="1" />
+
+    <EditText
+        android:id="@+id/ETWAW1"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth2"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="2" />
+
+    <EditText
+        android:id="@+id/ETWAW2"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="3" />
+
+    <EditText
+        android:id="@+id/ETWAW3"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth4"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="4" />
+
+    <EditText
+        android:id="@+id/ETWAW4"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="5" />
+
+    <EditText
+        android:id="@+id/ETWAW5"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth6"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="6" />
+
+    <EditText
+        android:id="@+id/ETWAW6"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth7"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="7" />
+
+    <EditText
+        android:id="@+id/ETWAW7"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth8"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="8" />
+
+    <EditText
+        android:id="@+id/ETWAW8"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth9"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="9" />
+
+    <EditText
+        android:id="@+id/ETWAW9"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth10"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="10" />
+
+    <EditText
+        android:id="@+id/ETWAW10"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth11"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="11" />
+
+    <EditText
+        android:id="@+id/ETWAW11"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/TVWAMonth12"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#CCCCCC"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="12" />
+
+    <EditText
+        android:id="@+id/ETWAW12"
+        android:layout_width="162dp"
+        android:layout_height="match_parent"
+        android:text="" />
+</TableRow>
+</TableLayout>
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/BsaveChild"
+    android:text="SAVE"
+    android:layout_marginStart="79dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/BcancelsaveChild"
+    android:text="CANCEl"
+    android:layout_marginLeft="246dp"
+    android:layout_alignBaseline="@+id/BsaveMother"
+    android:layout_alignBottom="@+id/BsaveMother"
+    android:layout_toEndOf="@+id/BsaveMother"
+    android:layout_marginStart="39dp" />
+
+</LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
